@@ -9,7 +9,7 @@ pipeline {
     stage('SonarQube analysis') {
       steps {
         withSonarQubeEnv('sonar') {
-          sh 'mvn verify org.sonarsource.scanner.maven:sonar-maven-plugin:sonar -Dsonar.projectKey=devopsni3'
+          sh 'mvn verify org.sonarsource.scanner.maven:sonar-maven-plugin:sonar -Dsonar.projectKey=arshiya_arshiya'
         }
       }
     }
